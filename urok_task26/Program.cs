@@ -4,26 +4,18 @@
 89126 -> 5
 */
 
-
 int CalcNumbersDigitCount(int N)
 {
     int cnt = 0;
     int remainder=N;
     
+    if (N==0) cnt=1; //Исключение
+
     while (remainder>0)
     {
-        if (remainder<10)
-        {
-            cnt+=1;
-            break;
-        }
-        else
-        {
-            remainder/=10;
-            cnt+=1;
-        }
+        remainder/=10;
+        cnt+=1;
     }
-
     return cnt;
 }
 

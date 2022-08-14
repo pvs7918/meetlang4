@@ -3,7 +3,7 @@
 [1,0,1,1,0,1,0,0] */
 
 
-void FillArray(int []arr)
+void FillRandomArray(int []arr)
 {
     Random rnd = new Random();
     
@@ -13,7 +13,7 @@ void FillArray(int []arr)
     }
 }
 
-void ViewArray(int []arr)
+void ViewRandomArray(int []arr)
 {
     string str = string.Empty;
     Console.WriteLine("Значения элементов массива: ");
@@ -33,5 +33,5 @@ void ViewArray(int []arr)
 
 int size = 8;
 int []arr = new int[size];
-FillArray(arr);
-ViewArray(arr);
+FillRandomArray(arr);
+ViewRandomArray(arr);
