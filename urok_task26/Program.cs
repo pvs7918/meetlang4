@@ -9,7 +9,7 @@ int CalcNumbersDigitCount(int N)
     int cnt = 0;
     int remainder = N;
 
-    if (N == 0) cnt = 1; //Исключение
+    if (remainder == 0) cnt = 1; //Исключение
 
     while (remainder > 0)
     {
