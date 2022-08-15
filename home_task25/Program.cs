@@ -11,9 +11,9 @@ int MyPow(int A, int B)
     int res = 1;
     int i;
 
-    for(i=1;i<=B;i++)
+    for (i = 1; i <= B; i++)
     {
-        res*=A;
+        res *= A;
     }
     return res;
 }
@@ -23,4 +23,4 @@ int A = int.Parse(Console.ReadLine()!);
 Console.Write("Введите B: ");
 int B = int.Parse(Console.ReadLine()!);
 
-Console.WriteLine($"Число {A} в степени {B} равно: {MyPow(A,B)}");
+Console.WriteLine($"Число {A} в степени {B} равно: {MyPow(A, B)}");

@@ -4,29 +4,29 @@
 */
 
 
-void CreateRandomArray(int []arr, int MaxValue)
+void CreateRandomArray(int[] arr, int MaxValue)
 {
     Random rnd = new Random();
-    
-    for (int i=0;i<arr.Length;i++)
+
+    for (int i = 0; i < arr.Length; i++)
     {
-        arr[i]=rnd.Next(1, MaxValue+1);
+        arr[i] = rnd.Next(1, MaxValue + 1);
     }
 }
 
-void ViewRandomArray(int []arr)
+void ViewRandomArray(int[] arr)
 {
     string str = "[";
     Console.WriteLine("Значения элементов массива: ");
-    for (int i=0;i<arr.Length;i++)
+    for (int i = 0; i < arr.Length; i++)
     {
-        if (i==0)
+        if (i == 0)
         {
-            str+=arr[i];
+            str += arr[i];
         }
         else
         {
-            str+=$", {arr[i]}";
+            str += $", {arr[i]}";
         }
     }
     str += "]";
@@ -34,7 +34,7 @@ void ViewRandomArray(int []arr)
 }
 
 int size = 8;
-int []arr = new int[size];
+int[] arr = new int[size];
 
 Console.Write("Введите максимальное значение для элементов массива: ");
 int MaxValue = int.Parse(Console.ReadLine()!);

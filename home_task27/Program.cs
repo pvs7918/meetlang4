@@ -7,14 +7,14 @@
 
 int CalcNumberDigitsSum(int N)
 {
-    int remainder=N;
-    int sum=0;    
-    while (remainder>0)
+    int remainder = N;
+    int sum = 0;
+    while (remainder > 0)
     {
         //текущая цифра
         sum += remainder % 10;
         //переходим к следующей цифре
-        remainder/=10;
+        remainder /= 10;
     }
     return sum;
 }
