@@ -7,14 +7,14 @@
 int CalcNumbersDigitCount(int N)
 {
     int cnt = 0;
-    int remainder=N;
-    
-    if (N==0) cnt=1; //Исключение
+    int remainder = N;
 
-    while (remainder>0)
+    if (N == 0) cnt = 1; //Исключение
+
+    while (remainder > 0)
     {
-        remainder/=10;
-        cnt+=1;
+        remainder /= 10;
+        cnt += 1;
     }
     return cnt;
 }
